@@ -19,7 +19,7 @@ spec:
       # ------------------------------
       initContainers:
         - name: migrate
-          image: hpark8672/django-app:latest
+          image: hpark8672/django-app:1.2
           command: ["sh", "-c", "python manage.py migrate"]
           envFrom:
             - secretRef:
@@ -32,7 +32,7 @@ spec:
       # ------------------------------
       containers:
         - name: mysite
-          image: hpark8672/django-app:latest
+          image: hpark8672/django-app:1.2
           ports:
             - containerPort: 8000
           envFrom:
