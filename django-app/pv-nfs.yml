@@ -9,5 +9,5 @@ spec:
     - ReadWriteOnce
   persistentVolumeReclaimPolicy: Retain
   nfs:
-    path: /nfs/db          # <-- NFS 서버의 공유 경로
+    path: /nfs/db-data          # <-- NFS 서버의 공유 경로
     server: 192.168.58.10
